@@ -1,0 +1,29 @@
+{
+    "stack-prefix": "root",
+    "stack-suffix": "stack",
+    "template-path": "/cft/sedum-root-stack.yaml",
+    "project-name": "sedum",
+    "parameters": {
+        "devl": [
+            {
+                "Environment": "devl",
+                "LambdaRuntime": "python3.8",
+                "LambdaFunctionTimeoutSecs": "300"
+            }
+        ],
+        "test": [
+            {
+                "Environment": "test",
+                "LambdaRuntime": "python3.9",
+                "LambdaFunctionTimeoutSecs": "600"
+            }
+        ],
+        "prod": [
+            {
+                "Environment": "prod",
+                "LambdaRuntime": "python3.9",
+                "LambdaFunctionTimeoutSecs": "600"
+            }
+        ]
+    }
+}
